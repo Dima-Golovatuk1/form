@@ -51,6 +51,9 @@ border-radius: 50px;
     border-radius: 50%;
     border: 1px solid rgb(104, 104, 104);
     background-color: #b9b9b9;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 
@@ -70,7 +73,7 @@ border-radius: 50px;
 .modal__title{
     margin-bottom: 30px;
     color: #3E3E3E;
-font-family: "Apercu Arabic Pro";
+font-family: "Apercu Arabic Pro", sans-serif;
 font-size: 40px;
 font-weight: 400;
 line-height: 130%; 
@@ -78,20 +81,42 @@ line-height: 130%;
 
 
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 }
 
 
 .form__label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 
 .form__input {
+    color: #2D2D2D;
+font-family: "Apercu Arabic Pro", sans-serif;
+font-weight: 400;
+line-height: 180%;
     border-radius: 10px;
 border: 1px solid #DCDCDC;
 background: #FFF;
 width: 557px;
 padding: 30px 46px;
+}
+
+
+.form__input-comment{
+    border-radius: 10px;
+border: 1px solid #DCDCDC;
+background: #FFF;
+width: 557px;
+height: 189px;
+padding: 30px 46px;
+}
+
+
+.form__button__input{
+    width: 218px;
+height: 73px;
+border-radius: 500px;
+background: #FAD34F;
 }

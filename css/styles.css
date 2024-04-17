@@ -31,6 +31,7 @@
     transform: translate(-50%, -50%);
     border-radius: 4px;
 background: #FFF;
+overflow: hidden;
 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
@@ -95,6 +96,21 @@ line-height: 130%;
 }
 
 
+.modal__imput__tumb{
+    position: relative;
+}
+
+
+.modal__label__icon{
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+
 .form__input {
     color: #2D2D2D;
 font-family: "Apercu Arabic Pro", sans-serif;
@@ -123,4 +139,14 @@ padding: 30px 46px;
 height: 73px;
 border-radius: 500px;
 background: #FAD34F;
+}
+
+
+iframe{
+    border-radius:50%;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    top: -10%;
+    right: -20%;
 }

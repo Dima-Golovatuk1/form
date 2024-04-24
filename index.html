@@ -13,7 +13,14 @@
 </head>
 
 <body>
-    <header class="header"></header>
+    <header class="header">
+        <ul class="header__list">
+            <li class="header__item"><a href="" class="header__link current">Home</a></li>
+            <li class="header__item"><a href="#about" class="header__link">about</a></li>
+            <li class="header__item"><a href="#projects" class="header__link">projects</a></li>
+            <li class="header__item"><a href="#contacts" class="header__link">contacts</a></li>
+        </ul>
+    </header>
     <main>
         <section class="hero">
                 <div class="hero__thumb hero__thumb-right" >
@@ -32,6 +39,15 @@
                 </div>
 
             <button class="btn-open" data-modal-open type="button">Відкрити модалку</button>
+        </section>
+        <section class="sectio" id="about">
+            <h2>Lorem, ipsum dolor.</h2>
+        </section>
+        <section class="sectio" id="projects">
+            <h2>Lorem, ipsum dolor.</h2>
+        </section>
+        <section class="sectio" id="contacts">
+            <h2>Lorem, ipsum dolor.</h2>
         </section>
     </main>
     <div class="backdrop is-hidden" data-modal>

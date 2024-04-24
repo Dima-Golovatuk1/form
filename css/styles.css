@@ -4,45 +4,70 @@
 
 
 .hero{
+    position: relative;
     background-color: black;
     height: 100vh;
     background-image: url("https://cdn.pixabay.com/photo/2023/02/23/16/16/ai-generated-7809190_1280.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
+    background-size: contain;
 }
 
 
 .hero__left-img{
-
-
 }
 
 
 .hero__right-img{
-
-
 }
 
 
+.hero__thumb {
+    border: 3px solid sandybrown;
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.hero__thumb:hover .overlay{
+    transform: translateX(0);
+
+}
 
 
 .hero__thumb-left{
-    border: 3px solid sandybrown;
-    position: absolute;
     bottom: 300px;
-    left: 300px;
-    width: 800px;
+    left: 150px;
+    width: 600px;
 }
+
+
 
 
 .hero__thumb-right{
-    border: 3px solid sandybrown;
-    position: absolute;
     right: 100px;
     top: 100px;
-    width: 600px;
+    width: 450px;
 }
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.8);
+    transform: translateX(-100%);
+    transition: transform 400ms ease-in-out;
+}
+
+
+.overlay__text{
+    color: white;
+}
+
 
 .backdrop {
     position: fixed;

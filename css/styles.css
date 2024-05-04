@@ -30,6 +30,44 @@ main{
 }
 
 
+.header__item:last-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.header__link {
+}
+
+
+.sabmenu {
+    position: absolute;
+    /* width: 100%; */
+    top: 100%;
+    left:0;
+    display: none;
+    background-color: #FFF;
+    border: 1px solid goldenrod;
+    padding: 20px;
+}
+
+
+.header__item:last-child:hover .sabmenu{
+    display: block;
+}
+
+
+
+.submenu__item {
+}
+
+
+.submenu__link {
+}
+
+
 .current::after{
     content: "";
     display: block;
